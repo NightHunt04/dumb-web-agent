@@ -1,0 +1,13 @@
+litellm==1.75.6
+playwright==1.54.0
+playwright-stealth==2.0.0
+python-dotenv
+markdownify
+langgraph==0.6.6
+fake_useragent
+litellm[proxy]
+ddgs
+colorama
+uuid
+pydantic
+groq==0.31.0
