@@ -59,10 +59,6 @@ async def main():
     # scrape title, contributor, mentors, organization, title, description of the project,
     # handle pagination by clicking on the Next Page button, handle upto 3 pages of scraping
     # """
-    # prompt = """go to https://erp.ppsu.ac.in/Login.aspx, select role as student, 
-    # enter username as 8469680090, enter pasword as 1G5%4B, then click on login button, 
-    # and then click on attendance from top menu and scrape the attendance table
-    # """
 
     # memory = agent.get_memory()
     # print(memory)
@@ -97,9 +93,7 @@ if __name__ == "__main__":
  # response = await agent.arun(
         #     "go to https://api.kastg.xyz/ai, and then from the table of data, give me those models which are for text generation or llm", 
         # )
-        # response = await agent.arun("go to https://erp.ppsu.ac.in/Login.aspx, select role as student, enter username as 8469680090, enter pasword as 1G5%4B, then click on login button, then wait for 3 seconds and then click on attendance from top menu and scrape the attendance table", verbose=True)
         # response = await agent.arun("go to https://www.ycombinator.com/companies, select the batch of Summer 2025 and Winter 2025, scroll down 2 times to load more companies, then scrape those company details including the company name, location, description, logo url, and tags, the output should be in json format", verbose=True)
-        # response = await agent.arun("go to https://www.nasdaq.com/market-activity/earnings, scrape all the companies which are earning this week along with the data Symbol, Company Name, Market Cap, Fiscal Quarter Ending, Consensus EPS, Last Year's Report Date, Last year's EPS and return the output in json format")
         # response = await agent.arun("go to https://playwright.dev/python/docs/intro, then click on Pages section, and give me summary of it")
         # response = await agent.arun("go to https://www.glassdoor.co.in/Job/index.htm, in job search, write software engineer, in city enter India and then press 'Enter' key from keyboard, then scrape all the jobs details including the job title, company name, location, salary, the output should be in json format, also scroll down upto end for loading more jobs, scroll maximum down height for loading more jobs or there might be a button to load more jobs, scroll until no new jobs are loaded, this will be getting dynamic content", verbose=True)
         # response = await agent.arun("go to https://www.linkedin.com/jobs/search?position=1&pageNum=0, in jobs search AI Engineer, and in location write India (erase any previous location by first clicking on x button in location as it is already filled), then search, then scroll down to load more jobs, then scrape all the jobs details including the job title, company name, location, salary, job role, there will be lots of jobs, scrape all of them, the output should be in json format, at the end if you see load more jobs button then click on it (click only one time if you see, and dont click again), and continue to scrape once more")
